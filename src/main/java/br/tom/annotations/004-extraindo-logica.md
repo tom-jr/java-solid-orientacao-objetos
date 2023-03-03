@@ -10,3 +10,8 @@ nova regra adicionada.
 Okay, ja vimos o quanto pode ser prejudicial para nossa coesão ter regra de negocios na class retirando nossa
 querida coesão.
 
+Na segunda parte conseguimos perceber a alteração que realizamos na Funcionario extraimos o método e o add em
+uma nova classe chamada de reajusteService para que lá ficasse desposta a regra para reajuste de salario assim
+quando existir a necessidade de uma nova regra ou de que a regra seja alterada, essa alteração não afete a class
+pessoa a toda mudança necessaria.
+Lembrando que ainda existe mais ações que podemos aplicar para melhora ainda mais o codigo e vamos as realizar.

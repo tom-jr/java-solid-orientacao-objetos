@@ -2,6 +2,7 @@ package br.tom.main;
 
 import br.tom.enums.EnumCargo;
 import br.tom.models.Funcionario;
+import br.tom.sevices.ReajusteService;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -16,8 +17,9 @@ public class Main {
                 .dataReajusteSalarial(LocalDate.now())
                 .build();
 
-        funcionario.reajusteSalarial(new BigDecimal("500"));
+        new ReajusteService().reajusteSalarial(new BigDecimal("400"), funcionario);
         System.out.println(funcionario);
+
 
     }
 }

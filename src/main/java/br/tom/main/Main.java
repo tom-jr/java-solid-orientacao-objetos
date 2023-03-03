@@ -14,7 +14,7 @@ public class Main {
                 .cpf("884.611.826-98")
                 .salario(new BigDecimal("1000.000"))
                 .enumCargo(EnumCargo.GERENTE)
-                .dataReajusteSalarial(LocalDate.now())
+                .dataReajusteSalarial(LocalDate.now().minusMonths(5))
                 .build();
 
         new ReajusteService().reajusteSalarial(new BigDecimal("400"), funcionario);
